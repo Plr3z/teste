@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde Integral</title>
+    <style>
+        :root {
+            --primary: #2E8B57;
+            --secondary: #F5F5F5;
+            --accent: #FF6347;
+            --text: #333;
+            --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        * {box-sizing: border-box; margin:0; padding:0;}
+        body {font-family: var(--font-stack); background: var(--secondary); color: var(--text); line-height:1.6;}
+        header {background: var(--primary); color:#fff; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center;}
+        header h1 {font-size:1.8rem;}
+        nav a {color:#fff; margin-left:1rem; text-decoration:none; font-weight:500;}
+        nav a:hover {text-decoration:underline;}
+        .hero {background:url('https://images.unsplash.com/photo-1580281657529-1a6e2e9b9f6b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; color:#fff; padding:4rem 2rem; text-align:center;}
+        .hero h2 {font-size:2.5rem; margin-bottom:0.5rem;}
+        .hero p {font-size:1.2rem; max-width:600px; margin:0 auto;}
+        .content {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; padding:2rem;}
+        .card {background:#fff; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.2s;}
+        .card:hover {transform:translateY(-5px);}
+        .card img {width:100%; height:180px; object-fit:cover;}
+        .card-body {padding:1rem;}
+        .card-body h3 {margin-bottom:0.5rem; font-size:1.4rem;}
+        .card-body p {font-size:0.95rem; color:#666;}
+        footer {background:var(--primary); color:#fff; text-align:center; padding:1rem; font-size:0.9rem;}
+        @media(max-width:600px){
+            header h1{font-size:1.5rem;}
+            .hero h2{font-size:2rem;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clínica Saúde Integral</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Cuide da sua saúde com profissionais dedicados</h2>
+        <p>Atendimento humanizado, tecnologia de ponta e equipe multidisciplinar para garantir o seu bem‑estar.</p>
+    </section>
+    <section id="sobre" class="content">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580281657529-1a6e2e9b9f6b?auto=format&fit=crop&w=400&q=80" alt="Equipe médica">
+            <div class="card-body">
+                <h3>Quem somos</h3>
+                <p>Fundada em 2010, a Clínica Saúde Integral oferece atendimento em diversas especialidades, com foco em prevenção e qualidade de vida.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580281657529-1a6e2e9b9f6b?auto=format&fit=crop&w=400&q=80" alt="Ambiente moderno">
+            <div class="card-body">
+                <h3>Infraestrutura</h3>
+                <p>Espaços modernos, equipamentos de última geração e ambiente acolhedor para todos os pacientes.</p>
+            </div>
+        </div>
+    </section>
+    <section id="servicos" class="content">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580281657529-1a6e2e9b9f6b?auto=format&fit=crop&w=400&q=80" alt="Consulta geral">
+            <div class="card-body">
+                <h3>Consulta Geral</h3>
+                <p>Exames, orientações e acompanhamento de saúde para todas as idades.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580281657529-1a6e2e9b9f6b?auto=format&fit=crop&w=400&q=80" alt="Especialidades">
+            <div class="card-body">
+                <h3>Especialidades</h3>
+                <p>Cardiologia, Dermatologia, Pediatria, Ginecologia e muito mais.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580281657529-1a6e2e9b9f6b?auto=format&fit=crop&w=400&q=80" alt="Laboratório">
+            <div class="card-body">
+                <h3>Laboratório</h3>
+                <p>Exames laboratoriais rápidos e precisos, com entrega de resultados em poucos dias.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="content">
+        <div class="card" style="grid-column: span 2;">
+            <div class="card-body">
+                <h3>Contato</h3>
+                <p>Endereço: Rua das Flores, 123 – Centro, São Paulo – SP</p>
+                <p>Telefone: (11) 98765-4321 | Email: contato@clinicasaude.com.br</p>
+                <p>Horário de atendimento: Segunda a Sexta, 8h – 18h</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © 2026 Clínica Saúde Integral. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
